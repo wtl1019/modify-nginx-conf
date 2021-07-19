@@ -1,6 +1,6 @@
 {
   "name": "modify-nginx-conf",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "make changes to an nginx configuration file in server",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -16,11 +16,17 @@
   "scripts": {
     "build": "node_modules/.bin/tsc"
   },
-  "devDependencies": {
-    "@types/node": "^15.12.2",
-    "@types/ssh2": "^0.5.46",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wtl1019/modify-nginx-conf"
+  },
+  "dependencies": {
     "colors": "^1.4.0",
-    "ssh2": "^1.1.0",
-    "typescript": "^4.3.2"
+    "ssh2": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^15.14.2",
+    "@types/ssh2": "^0.5.47",
+    "typescript": "^4.3.5"
   }
 }
