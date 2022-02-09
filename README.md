@@ -19,6 +19,14 @@ add following code to your file.
 ```js
 const WebpackModifyNginxConfigPlugin = require('modify-nginx-conf')
 
+/**
+ * host 服务器ip
+ * port 服务器端口
+ * username 用户名
+ * password 密码
+ * locationPath 添加的项目配置路径名称，eg: /react/aaa/ccc
+ * nginxFilePath nginx配置文件的路径
+ */
 new WebpackModifyNginxConfigPlugin({
   username: 'root',
   host: 'xxxxxx',
